@@ -9,11 +9,11 @@ router.post('/', (req, res)=>{
     res.json({data: "Hello World POST"});
 })
 
-router.delete('/', (req, res)=>{
+router.delete('/:id', (req, res)=>{
     res.json({data: "Hello World DELETE"});
 })
 
-router.patch('/', (req, res)=>{
+router.patch('/:id', (req, res)=>{
     res.json({data: "Hello World PATCH"});
 })
 
