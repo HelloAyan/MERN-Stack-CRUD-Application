@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 
 app.use('/books', booksRoute)
 
+//MongoDB connection
 mongoose.connect('mongodb+srv://admin:admin@cluster0.rteky.mongodb.net/?retryWrites=true&w=majority', (even)=>{
     console.log("Connected to MongoDB");
 }).catch( (err) =>{
