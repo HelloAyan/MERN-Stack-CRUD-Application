@@ -15,3 +15,15 @@ export function addBookAPI(book){
     .then(res => res.json())
     .then(data => data);
 }
+
+export function updateBookAPI(book){
+    return fetch(`http://localhost:5000/books/${book._id}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        book: JSON.stringify(book)
+    })
+    .then(res => res.json())
+    .then(data => data);
+}
