@@ -27,3 +27,14 @@ export function updateBookAPI(book){
     .then(res => res.json())
     .then(data => data);
 }
+
+export function deleteBookAPI(id){
+    return fetch(`http://localhost:5000/books/${id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(data => data)
+}
