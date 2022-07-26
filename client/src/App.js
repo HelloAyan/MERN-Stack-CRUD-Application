@@ -8,6 +8,13 @@ function App() {
     getBooksAPI().then(books => setBooks(books));
   }, [])
 
+  const addBook = (book) => {
+    return addBookAPI(book)
+    .then(data => {
+      setBooks([...books, data])
+    })
+  }
+
 
   return (
     <div className="App">
