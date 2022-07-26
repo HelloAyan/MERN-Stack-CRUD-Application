@@ -15,6 +15,13 @@ function App() {
     })
   }
 
+  const updateBook = (book) => {
+    return updateBookAPI(book)
+    .then(data => {
+      return data;
+    })
+  }
+
 
   return (
     <div className="App">
