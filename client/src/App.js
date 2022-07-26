@@ -3,6 +3,12 @@ import {getBooksAPI, addBookAPI, updateBookAPI, deleteBookAPI} from './apis/book
 
 
 function App() {
+  const [books, setBooks] = useState([]);
+  useEffect(() =>{
+    getBooksAPI().then(books => setBooks(books));
+  }, [])
+
+
   return (
     <div className="App">
       
