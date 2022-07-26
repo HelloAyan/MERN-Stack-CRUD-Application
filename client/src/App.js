@@ -22,6 +22,15 @@ function App() {
     })
   }
 
+  const deleteBook = (id) =>{
+    return deleteBookAPI(id)
+    .then(data => {
+      if(data.deletedCount ===1){
+        setBooks(books.filter(book => book._id !== id));
+      }
+    })
+  }
+
 
   return (
     <div className="App">
