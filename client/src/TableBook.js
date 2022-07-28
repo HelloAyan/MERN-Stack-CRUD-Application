@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import { getBooksAPI } from './apis/books';
 
 function TableBook(props){
-    const {book} = props;
+    const {books} = props;
 
     return(
         <table>
@@ -23,3 +22,4 @@ function TableBook(props){
         </table>
     )
 }
+export default TableBook;
