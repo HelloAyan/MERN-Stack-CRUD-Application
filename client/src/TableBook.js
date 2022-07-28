@@ -13,8 +13,8 @@ function TableBook(props){
                 books.map(book =>{
                     return(
                         <tr key={book._id}>
-                            <td>book.title</td>
-                            <td>book.description</td>
+                            <td>{book.title}</td>
+                            <td>{book.description}</td>
                         </tr>
                     )
                 })
