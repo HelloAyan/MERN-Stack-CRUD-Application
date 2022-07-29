@@ -22,7 +22,7 @@ export function updateBookAPI(book){
         headers: {
             'Content-Type': 'application/json'
         },
-        book: JSON.stringify(book)
+        body: JSON.stringify(book)
     })
     .then(res => res.json())
     .then(data => data);

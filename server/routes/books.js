@@ -38,8 +38,9 @@ router.delete('/:id', (req, res)=>{
 })
 
 router.patch('/:id', (req, res)=>{
-    book.updateOne({_id: req.params.id},
+    book.updateMany({_id: req.params.id},
         {
+            $set: {title: req.body.title},
             $set: {description: req.body.description}
         })
     .then((data) =>{
