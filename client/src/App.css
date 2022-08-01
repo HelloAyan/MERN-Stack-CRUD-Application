@@ -1,5 +1,5 @@
 .add-form{
-    margin-left: 500px;
+    text-align: center;
     font-family: 'Helvetica Neue' ;
     font-size: 18px;
 }
@@ -16,4 +16,22 @@ input{
     background-color: #2596B7;
     color: white;
     padding: 5;
+}
+
+.table-book{
+    margin-left: 40%;
+    font-family: 'Helvetica Neue' ;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.header{
+    font-size: 18px;
+    font-weight: bold;
+    
+    
+}
+
+.title-header{
+    padding-right: 50px;
 }
