@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./App.css";
 
 function CreateBook(props){
     const {onCreate} = props;
@@ -21,17 +22,19 @@ function CreateBook(props){
     }
 
     return(
-        <form onSubmit={onSubmit}>
-            <label>
-                Title:
-                <input name='title' type='text' value={book.title} onChange={(e) => handleChange(e)} />
-            </label>
+        <form onSubmit={onSubmit} >
+            <div className='add-form'>
+                <label className='title'>
+                    Title: <br />
+                    <input name='title' type='text' value={book.title} onChange={(e) => handleChange(e)} /> <br />
+                </label>
 
-            <label>
-                Description:
-                <input name='description' type='text' value={book.description} onChange={(e) => handleChange(e)} />
-            </label>
-            <input type="submit" value="Submit" />
+                <label className='description'>
+                    Description: <br />
+                    <input name='description' type='text' value={book.description} onChange={(e) => handleChange(e)} /> <br />
+                </label>
+                <input type="submit" value="Submit" className='submit'/>
+                </div>
         </form>
     )
 }
