@@ -47,6 +47,11 @@ tr:nth-child(even) {
     text-align: left;
     padding: 10px;
   }
-.deleteButton{
+.delete-Button{
+    cursor: pointer;
+}
+
+.updateCenter, .deleteCenter{
+    text-align: center;
     cursor: pointer;
 }
