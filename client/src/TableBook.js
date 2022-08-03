@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "./App.css";
 
 function TableBook(props){
-    const {books} = props;
+    const {books, onDelete} = props;
 
     return(
         <table className='table-book'>
@@ -16,6 +16,7 @@ function TableBook(props){
                         <tr key={book._id}>
                             <td className='show-title'>{book.title}</td>
                             <td className='show-description'>{book.description}</td>
+                            <td><button onClick={()=> onDelete(book._id)}>Delete</button></td>
                         </tr>
                     )
                 })

@@ -24,7 +24,7 @@ input{
     font-size: 16px;
     margin-top: 20px;
     border-collapse: collapse;
-    width: 45%;
+    width: 50%;
     
 }
 
@@ -47,3 +47,6 @@ tr:nth-child(even) {
     text-align: left;
     padding: 10px;
   }
+.deleteButton{
+    cursor: pointer;
+}
