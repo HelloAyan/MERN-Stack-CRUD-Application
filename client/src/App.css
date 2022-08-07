@@ -45,13 +45,13 @@ tr:nth-child(even) {
   td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 10px;
+    padding: 11px;
   }
-.delete-Button{
+
+.updateCenter, .deleteCenter{
     cursor: pointer;
 }
 
-.updateCenter, .deleteCenter{
+.inputCenter{
     text-align: center;
-    cursor: pointer;
 }
