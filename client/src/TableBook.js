@@ -12,6 +12,7 @@ function TableBook(props){
                 <td className='title-header'>Title</td>
                 <td className='description-header'>Description</td>
             </tr>
+            
             {
                 books.map(book =>{
                     return(
