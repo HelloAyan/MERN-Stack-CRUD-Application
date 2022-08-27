@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const booksRoute = require('./routes/books');
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 const app = express();
 
@@ -18,6 +19,6 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0.rteky.mongodb.net/?retryWri
     console.log(err);
 })
 
-app.listen(5000, ()=>{
+app.listen(process.env.PORT || 5000, ()=>{
     console.log("App listening on port 5000");
 })
